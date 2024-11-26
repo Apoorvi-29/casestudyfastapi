@@ -3,7 +3,7 @@ name: Docker deployement using Github Actions
 on:
   workflow_dispatch:
     inputs:
-      crundeployment:
+      deployment:
         type: boolean
         required: true
         
@@ -28,6 +28,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: user/app:latest
+          tags: apoorvi29/app:latest
           
       
